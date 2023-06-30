@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Employee Promotion</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Predict Employee Promotion</h1>
+        <form action="{{url_for('predict_datapoint')}}">
+            <h2>
+                <legend>
+                    Fill out below information to find if you're promoted or not
+                </legend>
+            </h2>
+
+            <div class="ha-1">
+                <label class="form-label">Department:</label>
+                <select class="form-control" name="department" placeholder="Select your department">
+                    <option class="placeholder" selected disabled value="">Select your department</option>
+                    <option value="Analytics">Analytics</option>
+                    <option value="Finance">Finance</option>
+                    <option value="HR">HR</option>
+                    <option value="Legal">Legal</option>
+                    <option value="Operations">Operations</option>
+                    <option value="Procurement">Procurement</option>
+                    <option value="R&D">R&D</option>
+                    <option value="Sales & Marketing">Sales & Marketing</option>
+                    <option value="Technology">Technology</option>
+                </select>
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Region</label>
+                <select class="form-control" name="region" placeholder="Select your region">
+                    <option class="placeholder" selected disabled value="">Select your region</option>
+                    <option value="region_1">region_1</option>
+                    <option value="region_2">region_2</option>
+                    <option value="region_3">region_3</option>
+                    <option value="region_4">region_4</option>
+                    <option value="region_5">region_5</option>
+                    <option value="region_6">region_6</option>
+                    <option value="region_7">region_7</option>
+                    <option value="region_8">region_8</option>
+                    <option value="region_9">region_9</option>
+                    <option value="region_10">region_10</option>
+                    <option value="region_11">region_11</option>
+                    <option value="region_12">region_12</option>
+                    <option value="region_13">region_13</option>
+                    <option value="region_14">region_14</option>
+                    <option value="region_15">region_15</option>
+                    <option value="region_16">region_16</option>
+                    <option value="region_17">region_17</option>
+                    <option value="region_18">region_18</option>
+                    <option value="region_19">region_19</option>
+                    <option value="region_20">region_20</option>
+                    <option value="region_21">region_21</option>
+                    <option value="region_22">region_22</option>
+                    <option value="region_23">region_23</option>
+                    <option value="region_24">region_24</option>
+                    <option value="region_25">region_25</option>
+                    <option value="region_26">region_26</option>
+                    <option value="region_27">region_27</option>
+                    <option value="region_28">region_28</option>
+                    <option value="region_29">region_29</option>
+                    <option value="region_30">region_30</option>
+                    <option value="region_31">region_31</option>
+                    <option value="region_32">region_32</option>
+                    <option value="region_33">region_33</option>
+                    <option value="region_34">region_34</option>
+                </select>
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Education:</label>
+                <select class="form-control" name="education" placeholder="Select your education">
+                    <option class="placeholder" selected disabled value="">Select your education</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                    <option value="Master's & above">Master's & above</option>
+                    <option value="Below Secondary">Below Secondary</option>
+                </select>
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Gender:</label>
+                <select class="form-control" name="gender" placeholder="Select your gender">
+                    <option class="placeholder" selected disabled value="">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Recruitment_Channel</label>
+                <select class="form-control" name="recruitment_channel" placeholder="Select recruitment_channel">
+                    <option class="placeholder" selected disabled value="">Select recruitment_channel</option>
+                    <option value="other">other</option>
+                    <option value="sourcing">sourcing</option>
+                    <option value="referred">referred</option>
+                </select>
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">No_of_Trainings</label>
+                <input class="form-control" type="number" placeholder="Enter no_of_trainings"
+                min="0" max="10">
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Age:</label>
+                <input class="form-control" type="number" placeholder="Enter your age"
+                min="18" max="60">
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Previous_Year_Rating:</label>
+                <input class="form-control" type="number" placeholder="Enter your previous_year_rating"
+                min="1" max="5">
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Length_of_Service:</label>
+                <input class="form-control" type="number" placeholder="Enter your length_of_service"
+                min="0" max="40">
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">KPIs_met:</label>
+                <select class="form-control" name="KPIs_met" placeholder="Select KPIs_met">
+                    <option class="placeholder" selected disabled value="">Select KPIs_met</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Awards_Won:</label>
+                <select class="form-control" name="awards_won" placeholder="Select awards_won">
+                    <option class="placeholder" selected disabled value="">Select awards_won</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="ha-1">
+                <label class="form-label">Avg_Training_Score:</label>
+                <input class="form-control" type="number" placeholder="Enter avg_training_score"
+                min="0" max="100">
+            </div>
+
+            <div class="button">Predict Employee Promotion:
+                <input class="btn btn-primary" type="submit" value="Submit" required>
+            </div>
+        </form>
+        <h3>
+            The Prediction is {{results}}
+        </h3>
+    </div>    
+</body>
+</html>
