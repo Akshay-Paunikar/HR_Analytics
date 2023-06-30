@@ -1,4 +1,4 @@
-department,region,education,gender,recruitment_channel,no_of_trainings,age,previous_year_rating,length_of_service,KPIs_met >80%,awards_won?,avg_training_score
+department,region,education,gender,recruitment_channel,no_of_trainings,age,previous_year_rating,length_of_service,KPIs_met,awards_won,avg_training_score
 Technology,region_26,Bachelor's,Male,sourcing,1,24,3.0,1,Yes,No,77
 HR,region_4,Bachelor's,Female,other,1,31,3.0,5,No,No,51
 Sales & Marketing,region_13,Bachelor's,Male,other,1,31,1.0,4,No,No,47

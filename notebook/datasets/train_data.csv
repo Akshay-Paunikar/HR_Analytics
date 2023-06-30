@@ -1,4 +1,4 @@
-department,region,education,gender,recruitment_channel,no_of_trainings,age,previous_year_rating,length_of_service,KPIs_met >80%,awards_won?,avg_training_score,is_promoted
+department,region,education,gender,recruitment_channel,no_of_trainings,age,previous_year_rating,length_of_service,KPIs_met,awards_won,avg_training_score,is_promoted
 Sales & Marketing,region_7,Master's & above,Female,sourcing,1,35,5.0,8,Yes,No,49,No
 Operations,region_22,Bachelor's,Male,other,1,30,5.0,4,No,No,60,No
 Sales & Marketing,region_19,Bachelor's,Male,sourcing,1,34,3.0,7,No,No,50,No

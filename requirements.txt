@@ -11,4 +11,6 @@ MarkupSafe
 Werkzeug
 dill
 scikit-learn
+xgboost
+catboost
 -e .
