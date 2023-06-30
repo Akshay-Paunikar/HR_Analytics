@@ -7,8 +7,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
-from hr_analytics.components.data_transformation import DataTransformation, DataTransformationConfig
-from hr_analytics.components.model_trainer import ModelTrainerConfig, ModelTrainer
+# from hr_analytics.components.data_transformation import DataTransformation, DataTransformationConfig
+# from hr_analytics.components.model_trainer import ModelTrainerConfig, ModelTrainer
 
 @dataclass
 class DataIngestionConfig:
@@ -25,7 +25,7 @@ class DataIngestion:
         logging.info("Entered the data ingestion method or component")
         
         try:
-            df = pd.read_csv("")
+            df = pd.read_csv("E:\\iNeuron\\Projects\\HR_Analytics\\notebook\\datasets\\train_data.csv")
             logging.info("read the raw dataset as dataframe")
             
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
