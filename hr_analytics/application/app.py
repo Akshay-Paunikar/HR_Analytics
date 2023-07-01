@@ -38,7 +38,7 @@ def predict_datapoint():
         
         predict_pipeline = PredictPipeline()
         results = predict_pipeline.predict(pred_df)
-        if results == 0:
+        if results == 0.0:
             promoted = "No"
         else:
             promoted = "Yes"

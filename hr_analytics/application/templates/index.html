@@ -9,7 +9,7 @@
 <body>
     <div class="login">
         <h1>Predict Employee Promotion</h1>
-        <form action="{{url_for('predict_datapoint')}}">
+        <form action="{{url_for('predict_datapoint')}}" method="post">
             <h2>
                 <legend>
                     Fill out below information to find if you're promoted or not
@@ -104,25 +104,25 @@
 
             <div class="ha-1">
                 <label class="form-label">No_of_Trainings</label>
-                <input class="form-control" type="number" placeholder="Enter no_of_trainings"
+                <input class="form-control" type="number" name="no_of_trainings" placeholder="Enter no_of_trainings"
                 min="0" max="10">
             </div>
 
             <div class="ha-1">
                 <label class="form-label">Age:</label>
-                <input class="form-control" type="number" placeholder="Enter your age"
+                <input class="form-control" type="number" name="age" placeholder="Enter your age"
                 min="18" max="60">
             </div>
 
             <div class="ha-1">
                 <label class="form-label">Previous_Year_Rating:</label>
-                <input class="form-control" type="number" placeholder="Enter your previous_year_rating"
+                <input class="form-control" type="number" name="previous_year_rating" placeholder="Enter your previous_year_rating"
                 min="1" max="5">
             </div>
 
             <div class="ha-1">
                 <label class="form-label">Length_of_Service:</label>
-                <input class="form-control" type="number" placeholder="Enter your length_of_service"
+                <input class="form-control" type="number" name="length_of_service" placeholder="Enter your length_of_service"
                 min="0" max="40">
             </div>
 
@@ -146,7 +146,7 @@
 
             <div class="ha-1">
                 <label class="form-label">Avg_Training_Score:</label>
-                <input class="form-control" type="number" placeholder="Enter avg_training_score"
+                <input class="form-control" type="number" name="avg_training_score" placeholder="Enter avg_training_score"
                 min="0" max="100">
             </div>
 
