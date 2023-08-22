@@ -11,10 +11,10 @@ Your client is a large MNC and they have 9 broad verticals across the organisati
 
 For above mentioned process, the final promotions are only announced after the evaluation and this leads to delay in transition to their new roles. Hence, company needs your help in identifying the eligible candidates at a particular checkpoint so that they can expedite the entire promotion cycle.
 
-![Alt text](image-1.png)
+![image](https://github.com/Akshay-Paunikar/HR_Analytics/assets/86560684/150eda65-1b7b-4c72-9344-bbf1b2b036fd)
 
 They have provided multiple attributes around Employee's past and current performance along with demographics. Now, The task is to predict whether a potential promotee at checkpoint in the test set will be promoted or not after the evaluation process.
 
 <h5>Dataset Description:</h5>
 
-![Alt text](image-2.png)
+![image](https://github.com/Akshay-Paunikar/HR_Analytics/assets/86560684/527785ab-3373-437e-9241-6afd72d713c4)
